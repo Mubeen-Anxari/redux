@@ -1,10 +1,14 @@
+"use client";
 
-import React from 'react'
-import { useAppSelector } from './hooks/hooks'
+import React from "react";
+import Header from "./component/Header";
+import Hero from "./component/Hero";
 
 export default function page() {
-  const user = useAppSelector(state=>state.userSlice.entities)
   return (
-    <div>page</div>
-  )
+    <div>
+      <Header />
+      <Hero />
+    </div>
+  );
 }
