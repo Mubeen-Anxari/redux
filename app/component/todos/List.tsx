@@ -9,9 +9,9 @@ export default function List() {
   return (
     <div>
       <ul>
-        {todos?.map((item) => {
+        {todos?.map((item,index) => {
           return (
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex" }} key={index}>
               <li
                 onClick={() => {
                   dispatch(removeTodo(item));
